@@ -18,7 +18,7 @@ while (<MYFILE>)
 	chomp;
 	my @values = split(',', $_);
 
-	print OUTFILE "$values[1], $values[0]\n";
+	print OUTFILE "$values[1],$values[0]\n";
 }
 
 close(OUTFILE);
